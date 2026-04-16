@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp -r \"D:\\\\VSCode Projects\\\\perficient_interview\" \"D:\\\\VSCode Projects\\\\propertyai\")",
+      "Bash(cp -r \"D:\\\\VSCode Projects\\\\perficient_interview\" \"D:\\\\VSCode Projects\\\\courseai\")",
+      "Bash(rsync -a --exclude='node_modules' --exclude='.next' --exclude='.git' --exclude='video/node_modules' --exclude='video/out' . \"../propertyai/\")",
+      "Bash(rsync -a --exclude='node_modules' --exclude='.next' --exclude='.git' --exclude='video/node_modules' --exclude='video/out' . \"../courseai/\")",
+      "Bash(tar --exclude='node_modules' --exclude='.next' --exclude='.git' --exclude='video/node_modules' --exclude='video/out' -cf - .)"
+    ]
+  }
+}

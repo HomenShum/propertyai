@@ -1,0 +1,202 @@
+[
+  {
+    "id": "G-001",
+    "scenario": "Anchor tenant early termination — broker needs retention strategy",
+    "role": "broker",
+    "propertyId": "PROP-101",
+    "query": "Hartford Financial Group is threatening early lease termination. What's at risk and what should I do?",
+    "required_references": ["LST-001", "REG-LEASE-001", "PROP-101"],
+    "preferred_response": "LST-001 tracks this: Hartford Financial Group occupies floors 8-12 (42% of NRA) and has signaled early termination effective Q4 2026. Per REG-LEASE-001, early termination requires 180-day written notice and payment of unamortized TI costs. Estimated revenue at risk: $2.1M annually. Immediate steps: 1. Schedule meeting with tenant CFO within 48 hours. 2. Prepare competitive relocation cost analysis. 3. Develop retention package with rent concession and building improvements.",
+    "criteria": { "must_mention_listing_id": true, "must_reference_regulation": true, "must_provide_action_steps": true, "must_mention_revenue_impact": true }
+  },
+  {
+    "id": "G-002",
+    "scenario": "Environmental contamination — Phase II required",
+    "role": "broker",
+    "propertyId": "PROP-103",
+    "query": "The Phase I flagged environmental concerns at Harbor Industrial. What are my obligations and next steps?",
+    "required_references": ["LST-003", "REG-ENV-001", "PROP-103"],
+    "preferred_response": "LST-003 is tracking this: Phase I ESA identified recognized environmental conditions (RECs) in the loading dock area from pre-1985 underground storage tanks. Per REG-ENV-001, Phase II assessment is required before any refinancing or sale. Estimated remediation cost: $150K-$400K. Steps: 1. Engage Licensed Environmental Professional immediately. 2. Consider CT DEEP voluntary cleanup program. 3. Complete Phase II boring and lab analysis.",
+    "criteria": { "must_mention_listing_id": true, "must_reference_regulation": true, "must_provide_action_steps": true, "must_mention_revenue_impact": true }
+  },
+  {
+    "id": "G-003",
+    "scenario": "Multiple lease expirations — renewal strategy needed",
+    "role": "broker",
+    "propertyId": "PROP-102",
+    "query": "Three retail leases are expiring within 90 days at Riverside. What's the renewal strategy?",
+    "required_references": ["LST-002", "REG-LEASE-001", "PROP-102"],
+    "preferred_response": "LST-002 tracks this: Starbucks, Verizon, and FastFit Gym all expire by July 2026, representing 18,200 sqft (28% of leasable area). Market rents have increased 12%. Per REG-LEASE-001, renewal offers must be provided 120 days before expiration. Steps: 1. Prepare market rent analysis. 2. Offer TI allowance tied to lease term. 3. Negotiate simultaneous signing.",
+    "criteria": { "must_mention_listing_id": true, "must_reference_regulation": true, "must_provide_action_steps": true, "must_mention_revenue_impact": true }
+  },
+  {
+    "id": "G-004",
+    "scenario": "Zoning variance for rooftop amenity",
+    "role": "broker",
+    "propertyId": "PROP-104",
+    "query": "We need a zoning variance for the rooftop terrace at Metro Mixed-Use. What's the process and timeline?",
+    "required_references": ["LST-004", "REG-ZONE-002", "PROP-104"],
+    "preferred_response": "LST-004 is in progress: the proposed rooftop terrace requires an MX-1 variance. Planning commission hearing is scheduled for May 15 and a neighbor has filed a preliminary objection. Per REG-ZONE-002, the application must demonstrate hardship, and the commission has 65 days to decide.",
+    "criteria": { "must_mention_listing_id": true, "must_reference_regulation": true, "must_provide_action_steps": true }
+  },
+  {
+    "id": "G-005",
+    "scenario": "Competitor offering aggressive concessions",
+    "role": "broker",
+    "propertyId": "PROP-105",
+    "query": "NewBridge Office Campus is offering 18 months free rent and stealing our prospects. What should we do?",
+    "required_references": ["LST-005", "PROP-105"],
+    "preferred_response": "LST-005 tracks this: NewBridge is offering 18 months free rent. Three prospect tours cancelled. PROP-105 is at 73% occupancy. Revenue impact: $680K. Steps: 1. Analyze effective rent vs competitor. 2. Develop targeted concession package. 3. Consider adjacent parking lot lease. 4. Evaluate repositioning given suburban softening trend.",
+    "criteria": { "must_mention_listing_id": true, "must_provide_action_steps": true, "must_mention_revenue_impact": true }
+  },
+  {
+    "id": "G-006",
+    "scenario": "Water damage emergency — roof failure",
+    "role": "broker",
+    "propertyId": "PROP-102",
+    "query": "We have water intrusion from a roof membrane failure at Riverside. Four suites are closed. What are my immediate obligations?",
+    "required_references": ["LST-011", "REG-MAINT-001", "PROP-102"],
+    "preferred_response": "LST-011 is critical: roof failure caused water damage to 4 suites. Per REG-MAINT-001, emergency repairs must commence within 24 hours. Full roof replacement: $380K. Revenue impact: $520K. Steps: 1. Document damage. 2. File insurance claim. 3. Schedule structural assessment. 4. Notify tenants of timeline.",
+    "criteria": { "must_mention_listing_id": true, "must_reference_regulation": true, "must_provide_action_steps": true, "must_mention_revenue_impact": true }
+  },
+  {
+    "id": "G-007",
+    "scenario": "Property tax assessment appeal",
+    "role": "broker",
+    "propertyId": "PROP-104",
+    "query": "The 2026 tax assessment jumped 18% at Metro Mixed-Use. Should we appeal and what's the deadline?",
+    "required_references": ["LST-014", "REG-TAX-001", "PROP-104"],
+    "preferred_response": "LST-014 tracks this: assessment increased 18% to $78M. Comps suggest $70M. Tax impact: $156K/year if not appealed. Deadline: May 1. Per REG-TAX-001, appeal to Board of Assessment Appeals within 20 days. Use income approach for strongest case.",
+    "criteria": { "must_mention_listing_id": true, "must_reference_regulation": true, "must_provide_action_steps": true, "must_mention_revenue_impact": true }
+  },
+  {
+    "id": "G-008",
+    "scenario": "ADA compliance gaps found in audit",
+    "role": "broker",
+    "propertyId": "PROP-106",
+    "query": "An accessibility audit found 4 ADA deficiencies at College Town Plaza. What needs to happen?",
+    "required_references": ["LST-015", "REG-ADA-001", "PROP-106"],
+    "preferred_response": "LST-015 tracks 4 deficiencies: van-accessible spaces, entrance slope, tactile signage, restroom grab bars. Remediation: $45K. Per REG-ADA-001, van-accessible spaces require 1 per 6, entrance doors need 32-inch clear width. Steps: 1. Engage contractor. 2. Prioritize entrance and parking first.",
+    "criteria": { "must_mention_listing_id": true, "must_reference_regulation": true, "must_provide_action_steps": true }
+  },
+  {
+    "id": "G-009",
+    "scenario": "Fire suppression system replacement decision",
+    "role": "broker",
+    "propertyId": "PROP-107",
+    "query": "The fire inspector says we need to replace pre-1980 sprinkler heads at Lakeside Warehouse. What are the requirements?",
+    "required_references": ["LST-008", "REG-FIRE-001", "PROP-107"],
+    "preferred_response": "LST-008 tracks this: 22 sprinkler heads from 1965 installation. Per REG-FIRE-001, sprinkler heads older than 50 years must be replaced per NFPA 25. Cost: $340K. Insurance may increase if not addressed. Steps: 1. Get competitive bids. 2. Negotiate with insurance. 3. Evaluate phased vs full replacement.",
+    "criteria": { "must_mention_listing_id": true, "must_reference_regulation": true, "must_provide_action_steps": true, "must_mention_revenue_impact": true }
+  },
+  {
+    "id": "G-010",
+    "scenario": "Medical office demand opportunity",
+    "role": "broker",
+    "propertyId": "PROP-108",
+    "query": "Yale New Haven Health is looking for medical office space near us. Is PROP-108 a good fit?",
+    "required_references": ["LST-010", "PROP-108"],
+    "preferred_response": "LST-010 tracks this: YNHH issued 3 RFPs for 15K-25K sqft. PROP-108 has vacant 2nd floor, is ADA-compliant, and near transit. Steps: 1. Prepare building specs for YNHH. 2. Verify MEP capacity for medical TI. 3. Develop competitive rental proposal.",
+    "criteria": { "must_mention_listing_id": true, "must_provide_action_steps": true }
+  },
+  {
+    "id": "G-011",
+    "scenario": "Portfolio-wide vacancy analysis",
+    "role": "portfolio_manager",
+    "regionId": "Downtown",
+    "query": "Which properties have the highest vacancy risk right now and what's the portfolio-wide trend?",
+    "required_references": ["LST-019", "PROP-105", "PROP-104"],
+    "preferred_response": "LST-019 identifies suburban office softening: portfolio dropped from 84% to 77% in 6 months. Highest risk: PROP-105 at 73%, PROP-104 at 82%. Steps: 1. Develop repositioning strategy. 2. Address competitor pricing at PROP-105. 3. Review lease expirations.",
+    "criteria": { "must_mention_listing_id": true, "must_mention_cross_property_pattern": true, "must_provide_action_steps": true }
+  },
+  {
+    "id": "G-012",
+    "scenario": "Portfolio escalation queue triage",
+    "role": "portfolio_manager",
+    "regionId": "Downtown",
+    "query": "What escalated items need my attention first? Prioritize by risk.",
+    "required_references": ["LST-003", "LST-011", "LST-001"],
+    "preferred_response": "Priority: 1. LST-003 environmental ($400K remediation). 2. LST-011 water intrusion ($520K impact). 3. LST-001 anchor tenant ($2.1M at risk). Also: LST-005 competitor threat ($680K), LST-014 tax appeal deadline May 1 ($156K/year).",
+    "criteria": { "must_mention_listing_id": true, "must_provide_action_steps": true, "must_mention_revenue_impact": true }
+  },
+  {
+    "id": "G-013",
+    "scenario": "Lease negotiation — tenant requesting rent reduction",
+    "role": "broker",
+    "propertyId": "PROP-106",
+    "query": "Chapter & Verse Books wants a 15% rent reduction at renewal. Should I negotiate or hold firm?",
+    "required_references": ["LST-007", "REG-LEASE-001", "PROP-106"],
+    "preferred_response": "LST-007: tenant requesting reduction from $32/sqft to $27.20. Market rate is $35/sqft. 8-year tenant, no late payments, good foot traffic. Per REG-LEASE-001, escalation caps at CPI + 3%. Recommendation: counter at $32 flat (below market), offer modest TI allowance.",
+    "criteria": { "must_mention_listing_id": true, "must_reference_regulation": true, "must_provide_action_steps": true, "must_mention_revenue_impact": true }
+  },
+  {
+    "id": "G-014",
+    "scenario": "Industrial rent increase opportunity",
+    "role": "broker",
+    "propertyId": "PROP-107",
+    "query": "Industrial vacancy is dropping in our submarket. Should we raise rents at Lakeside Warehouse?",
+    "required_references": ["LST-016", "PROP-107"],
+    "preferred_response": "LST-016: submarket vacancy dropped from 6.2% to 3.8% YoY. PROP-107 at 98% occupancy with below-market rents ($6.50 vs $8.20/sqft). Three leases renew in 6 months. Steps: 1. Prepare market comp analysis. 2. Phase increases over 2 cycles. 3. Start conversations 6 months early.",
+    "criteria": { "must_mention_listing_id": true, "must_provide_action_steps": true }
+  },
+  {
+    "id": "G-015",
+    "scenario": "Maintenance budget prioritization",
+    "role": "portfolio_manager",
+    "regionId": "Downtown",
+    "query": "We have limited capital budget. Which maintenance items should we prioritize across the portfolio?",
+    "required_references": ["PROP-102", "PROP-107", "PROP-103"],
+    "preferred_response": "Priority: 1. PROP-102 roof ($380K) — emergency with suites closed. 2. PROP-103 Phase II ($28K) — regulatory requirement. 3. PROP-107 fire suppression ($340K) — fire marshal advisory. 4. PROP-106 ADA ($45K) — federal compliance. Total pipeline: $838K+.",
+    "criteria": { "must_mention_cross_property_pattern": true, "must_provide_action_steps": true, "must_mention_revenue_impact": true }
+  },
+  {
+    "id": "G-016",
+    "scenario": "Market comp analysis for property valuation",
+    "role": "broker",
+    "propertyId": "PROP-101",
+    "query": "What are the recent comp sales and market data for One Financial Plaza?",
+    "required_references": ["PROP-101"],
+    "preferred_response": "PROP-101 market data: Comp sales $148/sqft (Q1 2026), $152/sqft (Q4 2025). Rental rate: $34.50/sqft. Vacancy: 13.0%. Cap rate: 6.2%. At 285,000 sqft and $42M value, implied price ~$147/sqft aligns with comps. Key risk: anchor tenant termination (LST-001).",
+    "criteria": { "must_mention_revenue_impact": true }
+  },
+  {
+    "id": "G-017",
+    "scenario": "Tenant warehouse expansion request",
+    "role": "broker",
+    "propertyId": "PROP-103",
+    "query": "LogiFlow wants to expand into the adjacent vacant bay at Harbor Industrial. Should we approve?",
+    "required_references": ["LST-013", "PROP-103"],
+    "preferred_response": "LST-013: LogiFlow (65K sqft) wants 22K expansion bay, willing to extend 7 years. Would bring occupancy to 100%. Market supports favorable terms (3.8% vacancy). Recommendation: approve at market rate $8.20/sqft.",
+    "criteria": { "must_mention_listing_id": true, "must_provide_action_steps": true }
+  },
+  {
+    "id": "G-018",
+    "scenario": "Energy efficiency and LEED opportunity",
+    "role": "broker",
+    "propertyId": "PROP-108",
+    "query": "The energy audit at Elm Street shows poor HVAC efficiency. Is there an ROI case for replacement?",
+    "required_references": ["LST-018", "REG-ENERGY-001", "PROP-108"],
+    "preferred_response": "LST-018: Energy Star score 52, HVAC 19 years old. VRF replacement: $1.2M. Savings: $180K/year (6.7 yr payback). LEED Silver potential: $3-5/sqft premium. Per REG-ENERGY-001, buildings below 50 require audits every 5 years. Strong ROI case.",
+    "criteria": { "must_mention_listing_id": true, "must_reference_regulation": true, "must_provide_action_steps": true }
+  },
+  {
+    "id": "G-019",
+    "scenario": "Cross-property pattern detection",
+    "role": "portfolio_manager",
+    "regionId": "Downtown",
+    "query": "Are there any systemic patterns I should be worried about across the portfolio?",
+    "required_references": ["LST-019", "PROP-105"],
+    "preferred_response": "Primary pattern: suburban office softening (LST-019) — dropped from 84% to 77% in 6 months. Secondary: lease renewal clusters, deferred maintenance at older properties (PROP-103/107), regulatory compliance backlog. Recommendation: strategic repositioning of suburban assets.",
+    "criteria": { "must_mention_listing_id": true, "must_mention_cross_property_pattern": true, "must_provide_action_steps": true }
+  },
+  {
+    "id": "G-020",
+    "scenario": "Due diligence summary for client meeting",
+    "role": "broker",
+    "propertyId": "PROP-104",
+    "query": "I have a client meeting about Metro Mixed-Use tomorrow. Give me a complete due diligence summary.",
+    "required_references": ["PROP-104", "LST-004", "LST-006", "LST-014"],
+    "preferred_response": "PROP-104: 320K sqft mixed-use, 2018, $78M value, 82% occ, 5.4% cap. Open items: LST-004 zoning variance (May 15 hearing), LST-006 exhaust complaints ($45K fix), LST-014 tax appeal (May 1 deadline, $156K/year). Maintenance: boiler cert May 10, energy audit May 5.",
+    "criteria": { "must_mention_listing_id": true, "must_provide_action_steps": true, "must_mention_revenue_impact": true }
+  }
+]

@@ -1,0 +1,13 @@
+.next/
+node_modules/
+.env.local
+.env*.local
+*.tsbuildinfo
+next-env.d.ts
+__pycache__/
+.pytest_cache/
+.venv/
+eval_results/
+.agent-skills/
+.vercel/
+convex.local.env
