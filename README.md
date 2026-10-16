@@ -1,5 +1,58 @@
 # PropertyAI
 
+## Developer handoff
+
+PropertyAI is a prototype for commercial real estate brokers and portfolio managers. The tracked web app uses Next.js, React and Convex; its agent and evaluation actions call Gemini. Start with the source map and configuration boundaries below before running the demo or changing its agent.
+
+This handoff describes source at `30fbda9a904859398d25d2644b00910e7497ed3e`. Installation, builds, provider access, model availability, browser behavior and evaluation quality were not verified. The original overview below describes synthetic demo content and intended behavior; its record counts and architecture statements are not measurements of a current deployment.
+
+### Read the source
+
+| Decision | Start here |
+|---|---|
+| Change the project safely | [AGENTS.md](AGENTS.md), [CLAUDE.md](CLAUDE.md) |
+| Find the web entrypoints | [landing and operator selection](src/app/page.tsx), [property route](src/app/property/page.tsx), [portfolio route](src/app/portfolio/page.tsx), [chat route](src/app/chat/page.tsx) |
+| Understand backend configuration | [root layout](src/app/layout.tsx), [Convex client provider](src/components/ConvexClientProvider.tsx) |
+| Understand the demo session boundary | [operator session provider](src/components/OperatorSessionProvider.tsx), [backend access helpers](convex/access.ts) |
+| Change data or agent behavior | [schema](convex/schema.ts), [agent action](convex/agent.ts) |
+| Review scripts and evaluation wiring | [package manifest](package.json), [evaluation action](convex/eval.ts) |
+
+When changing Convex code, follow the existing instruction to read [Convex guidelines](convex/_generated/ai/guidelines.md). The curated synthetic evaluation file is linked from AGENTS.md; its contents and quality were not assessed for this handoff.
+
+### Configure the two sides
+
+| Setting | Where the source reads it | Meaning |
+|---|---|---|
+| `NEXT_PUBLIC_CONVEX_URL` | Next.js client provider | URL of the intended Convex development deployment. The root layout wraps all routes with this provider; its missing-value branch renders a configuration notice instead of the app children. |
+| `GEMINI_API_KEY` or `GOOGLE_API_KEY` | Convex agent and evaluation actions | Backend provider credential; the code prefers `GEMINI_API_KEY` and falls back to `GOOGLE_API_KEY`. Configure it in the Convex environment, not in a public frontend variable. |
+
+Use a development Convex deployment you control. The existing local workflow is shown below; these commands were read from the repository and were not executed for this handoff:
+
+```bash
+npm install
+# Terminal 1: configure/start the intended Convex development deployment
+npx convex dev
+# Terminal 2: point NEXT_PUBLIC_CONVEX_URL in .env.local at that deployment
+npm run dev:app
+```
+
+The manifest also provides `npm run dev` to start Convex with Next.js, and `npm run build` for `next build`. A script's presence does not establish that it passes. No environment file or credential value was inspected.
+
+`npm run seed` runs the backend seed command to populate demo data; run it only against the intended demo deployment. `npm run eval:live` invokes the backend evaluation action, which calls the agent and Gemini judge and writes evaluation records. Neither command is an offline documentation check, and neither was run here. No current accuracy result is claimed.
+
+### Prototype boundaries
+
+- The landing page selects an operator, and the browser session provider stores that selection in local storage. Backend access helpers look up the supplied operator ID and check property or region access. These demo mechanics do not establish authenticated user identity or production authorization.
+- The agent source selects separate Pro and Flash-Lite preview model names for execution and planning. Those constants are source configuration, not proof that either model is currently available.
+- [pyproject.toml](pyproject.toml) retains the retail-operations evaluation identity. The complete reviewed Git tree contains no `.py` implementation files; do not assume a runnable Python harness from that manifest alone.
+- Synthetic demo records, reference checks and model-generated judge scores do not establish real property facts, regulatory correctness or production readiness.
+
+Documentation history: [README handoff](CHANGELOG/docs/readme.md) · [agent-instruction link repair](CHANGELOG/docs/agents.md).
+
+## Original project notes (preserved)
+
+The following overview is retained from the reviewed source. Read it with the configuration and verification limits above.
+
 Real estate property insight generator for commercial brokers and portfolio managers, built with Next.js, Convex, and Gemini.
 
 ## What it does
